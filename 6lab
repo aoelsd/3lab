@@ -1,0 +1,50 @@
+<html>
+
+	<body>
+
+		<input type=button value=Старт id="buttonstart" onclick = OpenForm()>
+
+		<form onsubmit="Submit()" id="buttonform"></form>
+
+		<script>
+			function OpenForm() {
+				buttonstart.onclick = null;
+				buttonform.innerHTML +=  "Выберите страну и введите текст : " + "<br>";
+
+				buttonform.innerHTML += "<input type='checkbox'> Россия"+"<br>";
+				
+				buttonform.innerHTML += "<input type='checkbox'> Украина"+"<br>";
+
+				buttonform.innerHTML += "<input type='text'>"+"<br>";
+
+				
+
+				buttonform.innerHTML += "<input type='submit'>";
+
+			};
+
+			function Submit() {
+				if (document.forms[0].elements[0].checked) {
+					alert(document.forms[0].elements[0].checked)
+					} else {
+						alert("Нет данных")
+					};
+
+				if (document.forms[0].elements[1].checked) {
+					alert(document.forms[0].elements[1].checked)
+					} else {
+						alert("Нет данных")
+					};
+				
+
+				if (document.forms[0].elements[2].value) {
+					alert(document.forms[0].elements[2].value)
+					} else {
+						alert("Нет данных")
+					};
+			};
+		</script>
+
+	</body>
+
+</html>
