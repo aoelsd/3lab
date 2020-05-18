@@ -1,0 +1,17 @@
+<! DOCTYPE HTML>
+<HTML>
+<Тело>
+<Скрипт>
+	Куки списком.
+	let ul = document.createElement ('ul');
+	document.body.append (ааа);
+	let cookies = document.cookie.split (';');
+	for (пусть i = 0; i <cookies.length; i ++) {
+		let li = document.createElement ('li');
+		li.textContent = cookie [i];
+		ul.append (Li);
+	}
+
+</ Скрипт>
+</ Body>
+</ Html>
